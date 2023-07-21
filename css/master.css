@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+
+:root {
+  --negro: #181823;
+  --naranja-fuerte: #FC7300;
+  --verde-opaco: #1F8A70;
+  --indigo: #00425A;
+  --blanco: #EFF5F5;
+  
+
+  
+}
+
+
+
+
+
+*{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Belanosima", Arial;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+
+
+nav {
+  background-color: #00425A;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-flex;
+  
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #EFF5F5;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #1F8A70;
+}
+
+/* Estilos de las secciones */
+ section {
+  padding: 40px;
+  background-color: #181823;
+  color: #EFF5F5;
+  
+}
+
+section h2 {
+  color: #FC7300;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #e9f3f7;
+  color: #EFF5F5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h3 {
+  margin: 0;
+}
+
+
+
+/* Estilos para tablet */
+@media (max-width: 768px){
+  section {
+    padding: 20px;
+  }}
+
+  #piePagina{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--naranja-fuerte);
+    color: #1F8A70(255, 255, 255);
+  }
+  #redesSociales {
+    display: grid;
+    gap: 20px;
+  }
+  
+  ion-icon{
+    color: white;
+    font-size: 2rem;
+  }
+
+/* Estilos para mobile */
+@media (max-width: 320px) {
+  nav ul li a {
+    padding: 5px 10px;
+  }
+
+  section {
+    padding: 30px;
+  }
+}
+
