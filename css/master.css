@@ -57,24 +57,128 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #1F8A70;
+  background-color: #FC7300;
 }
+
+nav ul li a {
+  padding: 5px 10px;
+}
+
+
+
 
 /* Estilos de las secciones */
  section {
-  padding: 40px;
-  background-color: #181823;
-  color: #EFF5F5;
+  padding: 60px;
   
+  background-color: #1F8A70;
+  color: #181823;
 }
+ 
+
+
+
 
 section h2 {
-  color: #FC7300;
+  color: #00425A;
+  text-align: center;
 }
+
+  .section1 {
+    background-color: #1F8A70;
+  }
+  
+  
+  .section2 {
+    background-color: #00425A;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 20px;
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  .text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text p {
+    font-size: 16px;
+  }
+ /*propuesta educativa--------------*/
+  h1 {
+    text-align: center;
+  }
+  
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .course {
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .course img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .course h2 {
+    margin: 10px 0;
+  }
+  
+  .course p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+/*--ultimas noticias--*/
+h1 {
+  text-align: center;
+}
+
+.latest-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-item {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.news-item h2 {
+  margin: 10px 0;
+}
+
+.news-item p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+ 
 
 /* Estilos del pie de página */
 footer {
-  background-color: #e9f3f7;
+  background-color: #1F8A70;
   color: #EFF5F5;
   padding: 20px;
   display: flex;
@@ -86,19 +190,12 @@ footer h3 {
 }
 
 
-
-/* Estilos para tablet */
-@media (max-width: 768px){
-  section {
-    padding: 20px;
-  }}
-
-  #piePagina{
+#piePagina{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr; 
     justify-items: center;
     align-items: center;
-    background-color: var(--naranja-fuerte);
+    background-color: var(--indigo);
     color: #1F8A70(255, 255, 255);
   }
   #redesSociales {
@@ -106,19 +203,65 @@ footer h3 {
     gap: 20px;
   }
   
+ 
+  
   ion-icon{
     color: white;
     font-size: 2rem;
   }
+ 
+  /* Estilos para tablet */
+@media (max-width: 768px){
+  nav ul li a  {
+    padding: 20px;
+  }}
 
-/* Estilos para mobile */
-@media (max-width: 320px) {
+  /* Estilos para mobile */
+@media  (max-width: 320px) {
   nav ul li a {
     padding: 5px 10px;
-  }
-
-  section {
-    padding: 30px;
-  }
+    
+  }}
+/*-----formulario----*/
+  .container-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+h1 {
+  text-align: center;
+}
+
+.form-grupo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
 
